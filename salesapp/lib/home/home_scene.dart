@@ -5,7 +5,7 @@ import 'package:salesapp/main/public.dart';
 import 'package:salesapp/home/homeStaticsItem.dart';
 import 'package:salesapp/home/home_appoint_cell.dart';
 import 'package:salesapp/home/Home_Task_Card.dart';
-
+import 'package:salesapp/home/home_drawer.dart';
 class HomeScene extends StatefulWidget {
   State<StatefulWidget> createState() => HomeSceneState();
 }
@@ -70,7 +70,12 @@ class HomeSceneState extends State<HomeScene> with RouteAware {
             color: SAColor.blue,
             child: Row(
               children: <Widget>[
-                SizedBox(width: 103),
+                new GestureDetector(
+                  onTap: () => {
+                    Scaffold.of(context).openDrawer(),
+                  },
+                  child: new Image.asset('img/my_menu.png', width: 40, height: 56,),
+                ),
                 Expanded(
                   child: Text(
                     '首页',

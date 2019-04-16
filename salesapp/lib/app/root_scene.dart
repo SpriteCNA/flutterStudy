@@ -4,7 +4,7 @@ import 'package:salesapp/home/home_scene.dart';
 import 'package:salesapp/customer/customer_scene.dart';
 import 'package:salesapp/task/task_scene.dart';
 import 'package:salesapp/appoint/appoint_scene.dart';
-
+import 'package:salesapp/home/home_drawer.dart';
 class RootScene extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => RootSceneState();
@@ -13,6 +13,7 @@ class RootScene extends StatefulWidget {
 class RootSceneState extends State<RootScene> {
   int _tabIndex = 0;
   bool isFinishSetup = false;
+  final GlobalKey<ScaffoldState> _scaffoldStateKey = GlobalKey<ScaffoldState>();
   List<Image> _tabImages = [
     Image.asset('img/home.png'),
     Image.asset('img/home.png'),
@@ -34,6 +35,10 @@ class RootSceneState extends State<RootScene> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldStateKey,
+      drawer: new Drawer(
+        child: new HomeDrawerScene(),
+      ),
       body: IndexedStack(
         children: <Widget>[
           HomeScene(),

@@ -18,43 +18,6 @@ class HomeTaskCard extends StatelessWidget {
           color: SAColor.textBlack,
           fontWeight: FontWeight.bold),
     );
-    if (this.unfinishedCount.length > 0) {
-      return new Text(
-        this.cardCount,
-        style: new TextStyle(
-            fontSize: 32,
-            color: SAColor.textBlack,
-            fontWeight: FontWeight.bold),
-      );
-    } else {
-      return new Row(
-        children: <Widget>[
-          new Text(
-            this.cardCount,
-            style: new TextStyle(
-                fontSize: 32,
-                color: SAColor.textBlack,
-                fontWeight: FontWeight.bold),
-          ),
-          new Column(
-            children: <Widget>[
-              new Container(
-                width: 12,
-                height: 22,
-                decoration: new BoxDecoration(
-                    border: new Border.all(width: 0.5, color: SAColor.redColor),
-                    borderRadius: new BorderRadius.all(new Radius.circular(6)),
-                    color: SAColor.redColor),
-                child: new Text(
-                  this.unfinishedCount,
-                  style: new TextStyle(fontSize: 10, color: SAColor.white),
-                ),
-              )
-            ],
-          )
-        ],
-      );
-    }
   }
 
   @override
