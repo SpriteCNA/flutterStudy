@@ -24,6 +24,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   fluttertoast: ^2.2.6
+  image_picker: ^0.5.3+1
+  path_provider: ^0.4.1
 
 dev_dependencies:
   flutter_test:
@@ -41,7 +43,40 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - img/
+    - img/add_icon.png
+    - img/aduit_item.png
+    - img/appint_item_unselected.png
+    - img/appoint_item.png
+    - img/buble_background.png
+    - img/cell_more.png
+    - img/customer_item_unselected.png
+    - img/deal_down.png
+    - img/deal_item.png
+    - img/dealer.png
+    - img/dealerinactive.png
+    - img/home.png
+    - img/home_item.png
+    - img/home_item_selected.png
+    - img/homeinactive.png
+    - img/item_call.png
+    - img/item_circle.png
+    - img/item_sms.png
+    - img/leads_item.png
+    - img/maintain_item.png
+    - img/my_menu.png
+    - img/new_car.png
+    - img/notice_item.png
+    - img/order_item.png
+    - img/pepole_item.png
+    - img/search_icon.png
+    - img/service_item.png
+    - img/set_item.png
+    - img/statistics.png
+    - img/statisticsinactive.png
+    - img/task_item.png
+    - img/tool_item.png
+    - img/visit.png
+    - img/visitinactive.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
