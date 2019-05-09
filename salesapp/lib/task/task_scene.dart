@@ -10,7 +10,7 @@ class TaskScene extends StatelessWidget {
           title: new Text('任务')
       ),
       body: new Container(
-        child: new Text('任务')
+        child: null
       ),
     );
   }

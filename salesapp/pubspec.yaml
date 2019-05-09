@@ -26,6 +26,9 @@ dependencies:
   fluttertoast: ^2.2.6
   image_picker: ^0.5.3+1
   path_provider: ^0.4.1
+  flutter_spinkit: ^3.1.0
+  sqflite: ^1.1.0
+
 
 dev_dependencies:
   flutter_test:

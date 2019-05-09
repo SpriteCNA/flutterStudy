@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:salesapp/main/public.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
-
 class HomeDrawerScene extends StatefulWidget {
   @override
   HomeDrawerSceneState createState() => HomeDrawerSceneState();
